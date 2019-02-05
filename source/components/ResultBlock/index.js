@@ -29,14 +29,18 @@ class ResultBlock extends React.Component {
         </div>
         <div className="result-block__result">
           <div style={{ fontWeight: "bold" }}>
-            你的抽奖券：
+            你的抽签券：
           </div>
           <div className="result-block__result-right">
             <image
               className="result-block__lucky-code"
               src="https://i.loli.net/2019/02/05/5c593abd822b3.png"
               mode="aspectFit"
-            /> × 3 >
+            /> × 3<image
+              className="result-block__right-arrow"
+              src="https://i.loli.net/2019/02/05/5c5995d407358.png"
+              mode="aspectFit"
+            />
           </div>
         </div>
       </div>

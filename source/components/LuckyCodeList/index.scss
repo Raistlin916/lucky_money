@@ -1,19 +1,32 @@
 @import "../common.scss";
 
+.lucky-code__list {
+  display: flex;
+  overflow: auto;
+  margin-top: 25px;
+}
+
 .lucky-code__img {
   width: 70px;
   height: 50px;
   margin-right: 10px;
 }
 
-.lucky-code__num {
-  font-size: 12px;
+.lucky-code__item {
+  padding-top: 5px;
 }
 
-.lucky-code__list {
-  display: flex;
-  overflow: auto;
-  margin-top: 30px;
+.lucky-code__item:first-child {
+  padding-left: 20px;
+}
+
+.lucky-code__item:last-child {
+  padding-right: 20px;
+}
+
+.lucky-code__num {
+  font-size: 12px;
+  text-align: center;
 }
 
 .lucky-code__line {
@@ -34,4 +47,20 @@
   border-radius: 50%;
   border: 2px solid #d3d3d3;
   background-color: white;
+}
+
+.lucky-code__ticket-num-wrapper {
+  position: relative;
+}
+.lucky-code__ticket-num {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 7px;
+  border-radius: 15px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
 }
