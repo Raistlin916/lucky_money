@@ -10,7 +10,7 @@ class LuckyCodeList extends React.Component {
   }
   render() {
     return (
-      <div className="lucky-code__list">
+      <div className="lucky-code__list block">
         {this.state.array50.map((item, index) =>
           <div className="lucky-code__item" key={index}>
             <image

@@ -23,7 +23,7 @@ class ResultBlock extends React.Component {
             NIKE AIR FORCE ONE CLOT WORLD 2018
             </div>
             <div className="result-block__goods-2nd-title">
-            NIKE AIR FORCE ONE CLOT WORLD 2018 / 42s
+            NIKE AIR FORCE ONE CLOT WORLD 2018 / 42
             </div>
           </div>
         </div>
