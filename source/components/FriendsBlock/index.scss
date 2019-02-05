@@ -1,6 +1,22 @@
 @import "../common.scss";
 
+.box__wrapper {
+  align-items: center;
+}
+
 .friends-block__desc {
   font-size: 12px;
   color: #666;
+}
+
+.lucky-code__slicer {
+  width: 25px;
+  height: 11px;
+  margin: 15px 0;
+}
+
+.friends-block__empty {
+  width: 202px;
+  height: 136px;
+  margin: 15px 0;
 }

@@ -4,7 +4,7 @@ import './index.scss';
 class FriendsBlock extends React.Component {
   render() {
     return (
-      <div className="block">
+      <div className="count-down__wrapper block">
         <div>
           <div className="countdown__title">
             开奖倒计时

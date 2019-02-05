@@ -1,10 +1,11 @@
 page {
-  height: 100%;
+  min-height: 100%;
 }
 .page {
   background-color: white;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  padding-top: 1px;
 
   & > .line {
     text-align: center;
@@ -23,4 +24,13 @@ page {
   padding: 10px;
   font-weight: bold;
   border-radius: 20px;
+}
+.steps-image {
+  height: 58px;
+  margin: 25px 0;
+}
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
 }
