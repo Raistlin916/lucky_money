@@ -12,16 +12,20 @@ var FriendsBlock = React.toClass(FriendsBlock, React.Component, {
       h(
         "view",
         null,
-        "开奖倒计时"
-      ),
-      h(
-        "view",
-        null,
-        "开奖时间为：2019年02月27日 15:00"
+        h(
+          "view",
+          { className: "countdown__title" },
+          "开奖倒计时"
+        ),
+        h(
+          "view",
+          { className: "countdown__desc" },
+          "开奖时间为：2019年02月27日 15:00"
+        )
       )
     );;
   },
-  classUid: "c337"
+  classUid: "c435"
 }, {});
 Component(React.registerComponent(FriendsBlock, "FriendsBlock"));
 
