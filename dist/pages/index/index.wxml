@@ -1,5 +1,0 @@
-<view class="page"><anu-resultblock data-instance-uid="{{'i11_8_' + 0}}" /><view class="line">
-          下 1 位好友登记抽签 = 再解锁 1 枚券
-        </view><view class="btn">
-          继续邀请登记
-        </view><anu-friendsblock data-instance-uid="{{'i18_8_' + 0}}" /><anu-countdown data-instance-uid="{{'i19_8_' + 0}}" /></view>

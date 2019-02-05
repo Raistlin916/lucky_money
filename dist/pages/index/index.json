@@ -1,7 +1,0 @@
-{
-    "usingComponents": {
-        "anu-resultblock": "/components/ResultBlock/index",
-        "anu-friendsblock": "/components/FriendsBlock/index",
-        "anu-countdown": "/components/CountDown/index"
-    }
-}

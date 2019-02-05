@@ -36,7 +36,7 @@ class ResultBlock extends React.Component {
               className="result-block__lucky-code"
               src="https://i.loli.net/2019/02/05/5c593abd822b3.png"
               mode="aspectFit"
-            /> x 3 >
+            /> × 3 >
           </div>
         </div>
       </div>
