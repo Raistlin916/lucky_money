@@ -3,9 +3,9 @@ import './pages/index/index';
 class Global extends React.Component {
     config = {
         window: {
-            navigationBarBackgroundColor: '#00afc7',
+            navigationBarBackgroundColor: 'white',
             backgroundTextStyle: 'light',
-            navigationBarTitleText: 'nanachi',
+            navigationBarTitleText: '百万大奖等着你',
             navigationBarTextStyle: 'black'
         }
     };

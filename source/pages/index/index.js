@@ -3,6 +3,7 @@ import ResultBlock from "@components/ResultBlock/index"
 import FriendsBlock from "@components/FriendsBlock/index"
 import CountDown from "@components/CountDown/index"
 import LuckyCodeList from "@components/LuckyCodeList/index"
+import AdList from "@components/AdList/index"
 import "./index.scss"
 
 class P extends React.Component {
@@ -29,6 +30,7 @@ class P extends React.Component {
           />
         </div>
 
+        <AdList />
       </div>
     )
   }

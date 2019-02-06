@@ -1,0 +1,23 @@
+@import "../common.scss";
+
+.ad-list {
+  flex-direction: column;
+}
+
+.ad-list__item {
+  position: relative;
+  margin: 10px 0;
+}
+
+.ad-list__btn {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: black;
+}
