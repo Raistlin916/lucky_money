@@ -14,6 +14,8 @@ class AdList extends React.Component {
   render() {
     return (
       <div className="ad-list block">
+        <div className="hr"></div>
+        <div className="ad-list__title">其他活动</div>
         {
           this.state.pages.map(item => {
             return (
