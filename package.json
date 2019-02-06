@@ -8,6 +8,7 @@
         }
     },
     "dependencies": {
+        "dayjs": "^1.8.4",
         "regenerator-runtime": "^0.12.1"
     }
 }
