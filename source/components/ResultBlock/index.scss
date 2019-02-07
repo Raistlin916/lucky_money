@@ -5,6 +5,7 @@
   height: 24px;
   margin-right: 5px;
   margin-left: -5px;
+  @include bg("https://i.loli.net/2019/02/05/5c593c85b4852.png");
 }
 .result-block__goods-wrapper {
   display: flex;
@@ -19,6 +20,7 @@
 .result-block__goods-image {
   width: 80px;
   height: 80px;
+  @include bg("https://i.loli.net/2019/02/05/5c5869d5a33e6.png");
 }
 .result-block__goods-side {
   margin-left: 10px;
@@ -41,6 +43,7 @@
 .result-block__lucky-code {
   height: 50px;
   width: 74px;
+  @include bg("https://i.loli.net/2019/02/05/5c593abd822b3.png");
 }
 
 .result-block__result-right {
@@ -53,4 +56,5 @@
   width: 12px;
   height: 12px;
   margin-left: 5px;
+  @include bg("https://i.loli.net/2019/02/05/5c5995d407358.png");
 }

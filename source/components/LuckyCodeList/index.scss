@@ -10,6 +10,11 @@
   width: 70px;
   height: 50px;
   margin-right: 10px;
+  @include bg("https://i.loli.net/2019/02/05/5c5995d408e6d.png");
+}
+
+.lucky-code__img--multiple {
+  background-image: url(https://i.loli.net/2019/02/05/5c5986d7b825e.png);
 }
 
 .lucky-code__item {

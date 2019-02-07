@@ -22,14 +22,7 @@ class P extends React.Component {
         <div className="center">
           <CountDown />
         </div>
-        <div class="center">
-          <image
-            class="steps-image"
-            src="https://i.loli.net/2019/02/05/5c599d5da3b14.png"
-            mode="aspectFit"
-          />
-        </div>
-
+        <div class="steps-image"/>
         <AdList />
       </div>
     )

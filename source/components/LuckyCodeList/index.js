@@ -23,18 +23,10 @@ class LuckyCodeList extends React.Component {
             {
               num > 1 ?
                 <div className="lucky-code__ticket-num-wrapper">
-                  <image
-                    class="lucky-code__img"
-                    src="https://i.loli.net/2019/02/05/5c5995d408e6d.png"
-                    mode="aspectFit"
-                  />
+                  <div class="lucky-code__img lucky-code__img--multiple"/>
                   <span className="lucky-code__ticket-num">{num}张</span>
                 </div> :
-                <image
-                  class="lucky-code__img"
-                  src="https://i.loli.net/2019/02/05/5c5986d7b825e.png"
-                  mode="aspectFit"
-                />
+                <div class="lucky-code__img"/>
             }
             <div className="lucky-code__line">
               <div className="lucky-code__circle"></div>

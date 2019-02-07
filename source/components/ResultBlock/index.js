@@ -5,19 +5,11 @@ class ResultBlock extends React.Component {
     return (
       <div className="box__wrapper block">
         <div className="box__title">
-          <image
-            className="result-block__title-img"
-            src="https://i.loli.net/2019/02/05/5c593c85b4852.png"
-            mode="aspectFit"
-          />
+          <div className="result-block__title-img"/>
           参与抽奖成功
         </div>
         <div className="result-block__goods-wrapper">
-          <image
-            className="result-block__goods-image"
-            src="https://i.loli.net/2019/02/05/5c5869d5a33e6.png"
-            mode="aspectFit"
-          />
+          <div className="result-block__goods-image"/>
           <div className="result-block__goods-side">
             <div className="result-block__goods-title">
             NIKE AIR FORCE ONE CLOT WORLD 2018
@@ -32,15 +24,7 @@ class ResultBlock extends React.Component {
             你的抽签券：
           </div>
           <div className="result-block__result-right">
-            <image
-              className="result-block__lucky-code"
-              src="https://i.loli.net/2019/02/05/5c593abd822b3.png"
-              mode="aspectFit"
-            /> × 3<image
-              className="result-block__right-arrow"
-              src="https://i.loli.net/2019/02/05/5c5995d407358.png"
-              mode="aspectFit"
-            />
+            <div className="result-block__lucky-code"/> × 3<div className="result-block__right-arrow"/>
           </div>
         </div>
       </div>
