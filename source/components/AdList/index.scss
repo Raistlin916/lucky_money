@@ -22,12 +22,6 @@
   background: black;
 }
 
-.ad-list__img {
-  width: 100%;
-  padding-top: 123.8%;
-  @include bg("");
-  background-image: attr(data-src url);
-}
 
 .ad-list__title {
   margin-bottom: 20px;
@@ -39,4 +33,13 @@
   margin: 25px 0;
   height: 1px;
   background: #e5e5e5;
+}
+
+.container.widthFix_container {
+  width: auto;
+  height: auto;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

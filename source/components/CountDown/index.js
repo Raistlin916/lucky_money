@@ -1,6 +1,6 @@
 import React from "@react"
 import './index.scss'
-import dayjs from 'dayjs'
+// import dayjs from 'dayjs'
 
 class CountDown extends React.Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class CountDown extends React.Component {
     const targetDate = 1551250800000
     this.state = {
       targetDate,
-      formattedDate: dayjs(targetDate).format('YYYY年MM月DD日 HH:mm'),
+      // formattedDate: dayjs(targetDate).format('YYYY年MM月DD日 HH:mm'),
       clock: [null, null, null]
     }
     this.updateClock = this.updateClock.bind(this)

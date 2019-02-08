@@ -1,5 +1,5 @@
-import React from "@react";
-import './index.scss';
+import React from "@react"
+import './index.scss'
 
 class AdList extends React.Component {
   constructor(props) {
@@ -24,7 +24,6 @@ class AdList extends React.Component {
                 key={item.url}
               >
                 <image
-                  class="ad-list__img"
                   src={item.url}
                   mode="widthFix"
                 />
