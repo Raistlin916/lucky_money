@@ -1,6 +1,6 @@
 import React from "@react"
 import './index.scss'
-// import dayjs from 'dayjs'
+//import dayjs from 'dayjs'
 
 class CountDown extends React.Component {
   constructor(props) {
