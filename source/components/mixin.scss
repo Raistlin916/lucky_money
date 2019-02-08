@@ -1,5 +1,7 @@
 @mixin bg($url, $size: contain) {
-  background-image: url($url);
+  @if $url != "" {
+    background-image: url($url);
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: $size;
