@@ -2,6 +2,7 @@ import React from "@react";
 import "./index.scss";
 class ResultBlock extends React.Component {
   render() {
+    console.log(this.props)
     return (
       <div className="box__wrapper block">
         <div className="box__title">
@@ -9,7 +10,7 @@ class ResultBlock extends React.Component {
           参与抽奖成功
         </div>
         <div className="result-block__goods-wrapper">
-          <div className="result-block__goods-image"/>
+          <div className="result-block__goods-image" style={{ backgroundImage: `url(${this.props.prize.pic})`}} />
           <div className="result-block__goods-side">
             <div className="result-block__goods-title">
             NIKE AIR FORCE ONE CLOT WORLD 2018
