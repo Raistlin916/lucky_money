@@ -1,4 +1,4 @@
-const tokens = {
+const tokenManager = {
   storageKey: 'LOGIN_DATA',
   tokens: {},
   userInfo: {},
@@ -54,12 +54,8 @@ const tokens = {
               wx.setStorageSync(this.storageKey, JSON.stringify(this.tokens))
               this.login()
               resolve()
-            },
-            fail: reject
+            }
           })
-        },
-        fail(e) {
-          console.log(e)
         }
       })
     })
@@ -95,4 +91,4 @@ const tokens = {
   }
 }
 
-export default tokens
+export default tokenManager

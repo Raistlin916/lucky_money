@@ -1,21 +1,18 @@
 import React from "@react"
 import './index.scss'
-//import dayjs from 'dayjs'
 
 class CountDown extends React.Component {
   constructor(props) {
     super(props)
-    const targetDate = 1551250800000
     this.state = {
-      targetDate,
-      // formattedDate: dayjs(targetDate).format('YYYY年MM月DD日 HH:mm'),
       clock: [null, null, null]
     }
     this.updateClock = this.updateClock.bind(this)
   }
   updateClock() {
     const now = Date.now()
-    const diff = ~~((this.state.targetDate - now) / 1000)
+    const targetDate = new Date(this.props.targetDate).getTime()
+    const diff = ~~((targetDate - now) / 1000)
     const add0 = s => (s + '').replace(/^\d$/, m => `0${m}`)
     this.setState({
       clock: [
@@ -39,7 +36,7 @@ class CountDown extends React.Component {
           开奖倒计时
         </div>
         <div className="countdown__desc">
-          开奖时间为：{this.state.formattedDate}
+          开奖时间为：{this.props.targetDate}
         </div>
         <div className="countdown__clock">
           <div className="countdown__clock-item">{this.state.clock[0]}</div>

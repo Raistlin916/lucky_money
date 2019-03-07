@@ -1,24 +1,40 @@
 const methods = ['get', 'post']
+
 const instance = {
-  header: null,
-  init(header) {
-    instance.header = header
+  init(tokenManager) {
+    instance.tokenManager = tokenManager
+  },
+  refreshToken() {
+    return instance.post('/uc/auth/refreshToken', {
+      client: { clientId: 'wmp_lottery_v1' },
+      authorizationType: 'wechat_micro_program',
+      authDetail: { refreshToken: instance.tokenManager.tokens.refreshToken }
+    })
   }
 }
+
 methods.forEach(method => {
   instance[method] = (url, data) =>
     new Promise((resolve, reject) => {
       wx.request({
-        url,
+        url: `https://api.ippapp.com${url}`,
         method,
         data,
-        header: instance.header,
-        success: (res) => {
+        header: {
+          'X-Client-Id': 'wmp_lottery_v1',
+          'X-Access-Token': instance.tokenManager.tokens.accessToken
+        },
+        success: res => {
           if (res.statusCode === 200) {
-            resolve(res.data)
-          } else {
-            reject(res.errMsg)
+            return resolve(res.data)
           }
+          if (res.statusCode === 401) {
+            return instance
+              .refreshToken()
+              .then(() => instance[method](url, data))
+              .then(resolve, reject)
+          }
+          reject(res.errMsg)
         },
         fail: reject
       })
